@@ -42,3 +42,5 @@ dmanser@tinos ~ curl -I https://public02.myfactory.cloud/saas/
 
 curl: (28) Failed to connect to public02.myfactory.cloud port 443 after 130969 ms: Connection timed out
 ```
+
+The server fails to accept the request (does not send a `SYN-ACK`).
