@@ -12,7 +12,8 @@ Typically, the OS's TCP/IP stack is responsible for choosing an ephemeral port, 
 **Step 1:**
 Set the ephemeral port for HTTPS to 61000:
 
-```iptables -t nat -A POSTROUTING -p tcp --dport 443 -j SNAT --to :61000
+```
+dmanser@tinos ~ sudo iptables -t nat -A POSTROUTING -p tcp --dport 443 -j SNAT --to :61000
 ```
 
 **Step 2:**
